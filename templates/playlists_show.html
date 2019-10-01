@@ -1,7 +1,4 @@
 <!-- templates/playlists_show.html -->
-{% extends 'base.html' %}
-
-{% block content %}
 <a href='/'>Back to Home</a>
 <div class='row'>
     <div class='col-sm-6 col-sm-offset-3'>
@@ -17,6 +14,8 @@
             <input type='hidden' name='_method' value='DELETE'>
             <button class='btn btn-primary' type='submit'>Delete</button>
         </form></p>
+        <hr>
+    <!-- Comment form -->
+    {% include 'partials/comment_form.html' %}
     </div>
 </div>
-{% endblock %}
